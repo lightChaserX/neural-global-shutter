@@ -9,17 +9,12 @@ Making RSGR (rolling shutter with global reset) alive -->
 
 - We offer an alternative and new solution for rolling shutter (RS) rectification by turning the rectification problem into a deblur-like one with RSGR, a widely ignored feature of RS. 
 - We propse a method to restore clean video from RSGR inputs by eliminating the spatial-varying distortions.
-- We collect a dataset with paired RSGR and GS videos under real scenes for developing and evalating algorithms.
+- We collect a dataset with paired RSGR and GS videos under real scenes for developing and evaluating algorithms.
 
 ## Updates
 
 - 2022/03/11: We make the RSGR-GS [dataset](https://drive.google.com/file/d/1gkZpdtDPMGyQF6t-GVq6YgjQ3QfknVRv/view?usp=sharing) public available.
 
-## Approach
-
-<div align="center">
-  <img src="resources/solution.png" width="800"/>
-</div>
 
 
 ## Citation
