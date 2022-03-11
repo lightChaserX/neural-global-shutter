@@ -7,9 +7,20 @@ Making RSGR (rolling shutter with global reset) alive -->
   <img src="resources/RSGR_problem.png" width="800"/>
 </div>
 
-**TL;DR:** we provide an alternative solution for rolling shutter rectification by making RSGR, a widely ignored feature of rolling shutter, alive. In this way, we turn the rectification problem into a deblur-like one.
+- We offer an alternative and new solution for rolling shutter (RS) rectification by turning the rectification problem into a deblur-like one with RSGR, a widely ignored feature of RS. 
+- We propse a method to restore clean video from RSGR inputs by eliminating the spatial-varying distortions.
+- We collect a dataset with paired RSGR and GS videos under real scenes for developing and evalating algorithms.
 
-Most computer vision systems assume distortion-free images as inputs. The widely used rolling-shutter (RS) image sensors, however, suffer from geometric distortion when the camera and object undergo motion during capture. Extensive researches have been conducted on correcting RS distortions. However, most of the existing work relies heavily on the prior assumptions of scenes or motions. Besides, the motion estimation steps are either oversimplified or computationally inefficient due to the heavy flow warping, limiting their applicability. In this work, we investigate using rolling shutter with a global reset feature (RSGR) to restore clean global shutter (GS) videos. This feature enables us to turn the rectification problem into a deblur-like one, getting rid of inaccurate and costly explicit motion estimation. First, we build an optic system that captures paired RSGR/GS videos. Second, we develop a novel algorithm incorporating spatial and temporal designs to correct the spatial-varying RSGR distortion. Third, we demonstrate that existing image-to-image translation algorithms can recover clean GS videos from distorted RSGR inputs, yet our algorithm achieves the best performance with the specific designs. Our rendered results are not only visually appealing but also beneficial to downstream tasks. Compared to the state-of-the-art RS solution, our RSGR solution is superior in both effectiveness and efficiency. Considering it is easy to realize without changing the hardware, we believe our RSGR solution can potentially replace the RS solution in taking distortion-free videos with low noise and low budget.
+## Updates
+
+- 2022/03/11: We make the RSGR-GS [dataset](https://drive.google.com/file/d/1gkZpdtDPMGyQF6t-GVq6YgjQ3QfknVRv/view?usp=sharing) public available.
+
+## Approach
+
+<div align="center">
+  <img src="resources/solution.png" width="800"/>
+</div>
+
 
 ## Citation
 
@@ -24,3 +35,8 @@ month = {June},
 year = {2022}
 }
 ```
+
+
+## License
+
+[![CC0](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
