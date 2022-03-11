@@ -1,6 +1,6 @@
 # neural-global-shutter
 
-> Neural Global Shutter: Learn to Restore Video from a Rolling Shutter Camera with Global Reset Feature
+> Neural Global Shutter: Learn to Restore Video from a Rolling Shutter Camera with Global Reset Feature    
 > CVPR, 2022
 
 [paper]()
